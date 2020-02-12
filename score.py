@@ -15,6 +15,12 @@
 # Would run the script in `mock.sh` (the example output in the problem
 # statement) and calculate the total score for that sample.
 #
+#
+# If you already have a file containing the solution. You may simple `cat` that
+# file:
+#
+#   python score.py a_example.in -- cat a_answer.ans
+#
 
 import sys
 import subprocess
