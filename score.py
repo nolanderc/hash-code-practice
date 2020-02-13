@@ -83,6 +83,8 @@ def score_sample(sample):
             index = parse_int(item)
             if index is None:
                 error(f"on the second line: expected integer, found '{item}'")
+            if index in order:
+                error(f"on the second line: ordered pizza {index} twice")
             order.append(index)
 
         return order
